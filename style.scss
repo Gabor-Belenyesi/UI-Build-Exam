@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$primary: #f8f7f3;
+$secondary: #1a24fb;
+// font-family: 'Space Grotesk', sans-serif;
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Overpass', sans-serif;
+
+header{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondary;
+    align-items: center;
+    padding: 0 20px;
+    p{
+        font-size: 12px;
+        font-weight: normal;
+        letter-spacing: 0.2em;
+        color: $primary;
+    }
+    span{
+        color: $primary;
+    }
+}
+
+.card-container{
+    max-width: 1280px;
+    gap: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px auto;
+    
+
+}
+
+
+.card {
+    padding: 40px;
+    max-width: 400px;
+    .inner{
+        border: solid 1px $secondary;
+        color: $secondary;
+        padding: 40px;
+        position: relative;
+        height: 380px;
+        .number {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sub{
+            font-size: 12px;
+            font-weight: normal;
+            letter-spacing: 0.2em;
+            margin-bottom: 10px;
+        }
+        .text{
+            font-size: 16px;
+            font-weight: normal;
+        }
+    }
+    
+    button{
+        width: 100%;
+        height: 18px;
+        font-size: 14px;
+        border: none;
+        background-color: $primary;
+        color: $secondary;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+}
